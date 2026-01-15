@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Harun Dzul</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Projects & Guides</h1>
+      <p>
+        Selected robotics projects and quick technical guides
+        based on real-world experience.
+      </p>
+      <p><a href="index.html">← Back to home</a></p>
+    </header>
+
+    <!-- PROJECTS -->
+    <section>
+      <h2>Robotics Projects</h2>
+
+      <h3>Autonomous Patrol Robot</h3>
+      <p>
+        Mobile robot designed for offices and facilities,
+        featuring autonomous navigation, remote monitoring,
+        and modular sensor integration.
+      </p>
+      <ul>
+        <li>ROS 2-based architecture</li>
+        <li>CAN bus motor driver</li>
+        <li>Linux industrial PC</li>
+      </ul>
+
+      <h3>STEM Robotics Education Platform</h3>
+      <p>
+        Hands-on robotics workshops for primary to high school students,
+        focusing on problem-solving and real engineering concepts.
+      </p>
+    </section>
+
+    <!-- ROS GUIDE -->
+    <section>
+      <h2>Express Guide: Install ROS 2 (Ubuntu)</h2>
+
+      <ol>
+        <li>Install Ubuntu 22.04 LTS</li>
+        <li>Set locale:
+          <pre><code>sudo locale-gen en_US en_US.UTF-8</code></pre>
+        </li>
+        <li>Add ROS 2 repository:
+          <pre><code>sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository universe</code></pre>
+        </li>
+        <li>Install ROS 2 Humble:
+          <pre><code>sudo apt install ros-humble-desktop</code></pre>
+        </li>
+        <li>Source ROS:
+          <pre><code>source /opt/ros/humble/setup.bash</code></pre>
+        </li>
+      </ol>
+
+      <p>
+        Full documentation:
+        <a href="https://docs.ros.org/en/humble/Installation.html" target="_blank">
+          official ROS docs
+        </a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 Harun Dzul</p>
+    </footer>
+
+  </div>
+</body>
+</html>
