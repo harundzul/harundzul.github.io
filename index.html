@@ -2,31 +2,226 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Welcome — harundzul</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harun Dzul — Robotics Engineer, Consultant & Educator</title>
+
   <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 3rem; color: #0f172a; background: #f8fafc; }
-    header { margin-bottom: 2rem; }
-    a { color: #0366d6; text-decoration: none; }
-    footer { margin-top: 3rem; color: #64748b; font-size: 0.9rem; }
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    header {
+      margin-bottom: 3.5rem;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.6rem;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2rem;
+      margin-bottom: 1.6rem;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      margin-bottom: 0.3rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #eef2ff;
+      color: #1e40af;
+      padding: 0.35rem 0.7rem;
+      margin: 0.25rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    @media (min-width: 768px) {
+      .grid-2 { grid-template-columns: 1fr 1fr; }
+      .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>Hello — I'm harundzul</h1>
-    <p>This is a simple GitHub Pages site served from <code>harundzul.github.io</code>.</p>
-  </header>
+  <div class="container">
 
-  <main>
+    <!-- HERO -->
+    <header>
+      <h1>Hi, I’m Harun Dzul 👋</h1>
+      <p>
+        Robotics & Automation Engineer, Consultant, and STEM Educator based in Malaysia.
+        I design, build, and deploy real-world robotic systems — and help people and
+        organizations learn, adopt, and scale robotics technology.
+      </p>
+    </header>
+
+    <!-- POSITIONING -->
     <section>
-      <h2>Getting started</h2>
-      <p>Replace this page by editing <code>index.html</code> in the repository root and pushing to <code>main</code>.</p>
-      <p>Learn more about GitHub Pages: <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener">GitHub Pages docs</a>.</p>
+      <h2>Who I Am</h2>
+      <p>
+        I work at the intersection of <strong>engineering, education, and product thinking</strong>.
+        My background spans mobile robots, embedded systems, ROS 2 integration,
+        industrial communication protocols, and hands-on STEM robotics education.
+      </p>
+      <p>
+        I enjoy turning complex systems into practical, deployable solutions —
+        whether that’s a patrol robot, an automation system, or a learning program.
+      </p>
     </section>
-  </main>
 
-  <footer>
-    <p>Published with GitHub Pages — https://harundzul.github.io</p>
-  </footer>
+    <!-- WHAT I DO -->
+    <section>
+      <h2>What I Do</h2>
+      <div class="grid grid-3">
+        <div>
+          <h3>🤖 Robotics Engineering</h3>
+          <ul>
+            <li>Mobile robots & AMR</li>
+            <li>ROS 2 system architecture</li>
+            <li>CAN bus & Modbus integration</li>
+            <li>Embedded & Linux systems</li>
+          </ul>
+        </div>
+        <div>
+          <h3>🛠️ Consulting & Prototyping</h3>
+          <ul>
+            <li>Proof-of-concept development</li>
+            <li>System integration & debugging</li>
+            <li>Vendor & hardware evaluation</li>
+            <li>Deployment-ready solutions</li>
+          </ul>
+        </div>
+        <div>
+          <h3>📚 STEM Education</h3>
+          <ul>
+            <li>Robotics workshops (kids → teens)</li>
+            <li>Hands-on project-based learning</li>
+            <li>Instructor & facilitator training</li>
+            <li>Curriculum & module design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT SIGNAL -->
+    <section>
+      <h2>Selected Work & Focus Areas</h2>
+      <ul>
+        <li>Autonomous patrol robot for offices & facilities</li>
+        <li>Mobile robot with multi-sensor integration</li>
+        <li>CAN bus motor driver integration on Linux PC</li>
+        <li>STEM robotics programs for primary & secondary students</li>
+        <li>Robotics consulting for automation & applied R&D</li>
+      </ul>
+    </section>
+
+    <!-- TECH STACK -->
+    <section>
+      <h2>Tech Stack</h2>
+      <div class="tags">
+        <span>ROS 2</span>
+        <span>C++</span>
+        <span>Python</span>
+        <span>ESP32</span>
+        <span>Linux</span>
+        <span>CAN Bus</span>
+        <span>Modbus</span>
+        <span>Embedded Systems</span>
+        <span>Autonomous Navigation</span>
+        <span>STEM Robotics</span>
+      </div>
+    </section>
+
+    <!-- NOW / NEXT -->
+    <section>
+      <h2>Now & Next</h2>
+      <p>
+        I’m currently focused on building practical robotic products,
+        expanding STEM robotics education, and collaborating with teams
+        that value strong engineering fundamentals and real-world impact.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+      <h2>Connect</h2>
+      <ul>
+        <li>GitHub: <a href="https://github.com/harundzul" target="_blank" rel="noopener">github.com/harundzul</a></li>
+        <li>Website: <a href="https://harundzul.github.io">harundzul.github.io</a></li>
+        <!-- Optional: LinkedIn, email, portfolio -->
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2026 Harun Dzul • Robotics • Education • Engineering</p>
+    </footer>
+
+  </div>
 </body>
 </html>
